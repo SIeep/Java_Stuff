@@ -11,6 +11,7 @@ public class Greeter {
     String firstName = console.readLine("What's your first name? ");
     // TODO:  3. Print out to the console "Hello <FIRST_NAME>!  Welcome to <PLACE>."
     console.printf("Hello %s! Welcome to %s.", firstName, place);
+    console.printf("Thanks for testing me!");
   }
   
 
