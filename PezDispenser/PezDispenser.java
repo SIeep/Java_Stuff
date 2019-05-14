@@ -1,4 +1,5 @@
 class PezDispenser {
+	public static final int MAX_PEZ = 12;
 	private String characterName = "Yoda";
 	public String getCharacterName() {
 		return characterName;
