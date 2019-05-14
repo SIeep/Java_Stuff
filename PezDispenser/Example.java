@@ -10,9 +10,15 @@ public class Example {
 		String before = dispenser.swapHead("Brandon");
 		System.out.printf("The old head was %s but now it is a %s head %n", 
 			before, dispenser.getCharacterName());
+		if (dispenser.isEmpty()) {
+			System.out.println("dispenser is empty.");
+		}
 		System.out.println("Filling the dispenser with delicious PEZ...\n");
 		System.out.println("..................\n");
 		dispenser.fill();
+		if (!dispenser.isEmpty()) {
+			System.out.println("dispenser is full.");
+		}
 	}
 
 }
