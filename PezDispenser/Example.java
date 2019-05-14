@@ -10,6 +10,9 @@ public class Example {
 		String before = dispenser.swapHead("Brandon");
 		System.out.printf("The old head was %s but now it is a %s head %n", 
 			before, dispenser.getCharacterName());
+		System.out.println("Filling the dispenser with delicious PEZ...\n");
+		System.out.println("..................\n");
+		dispenser.fill();
 	}
 
 }
