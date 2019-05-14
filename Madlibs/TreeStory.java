@@ -20,8 +20,9 @@ public class TreeStory {
             String verb = console.readLine("Enter an verb:   ");
             String adverb = console.readLine("Enter an adverb:   ");
             String noun = console.readLine("Enter an noun:   ");
-            if (noun.equalsIgnoreCase("dork")) {
-                console.printf("No dorks allowed.\n");
+            if (noun.equalsIgnoreCase("dork") ||
+                noun.equalsIgnoreCase("jerk")) {
+                console.printf("No bullying allowed.\n");
                 System.exit(0);
             }
             console.printf("Your story:\n---------------\n");
