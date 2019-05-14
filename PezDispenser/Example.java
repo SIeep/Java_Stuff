@@ -4,7 +4,7 @@ public class Example {
 		PezDispenser dispenser = new PezDispenser();
 		System.out.println("I'm creating a Pez dispenser.");
 		System.out.printf("The current dispenser is a %s dispenser %n",
-			dispenser.characterName);
+			dispenser.getCharacterName());
 	}
 
 }
