@@ -12,6 +12,7 @@ import java.io.Console;
  		do {
  			response = console.readLine("Do you understand do while loops?\n");
  		} while(response.equalsIgnoreCase("no"));
+ 		console.printf("Because you said %s, the program has stopped\n", response);
 	}
  }
 
