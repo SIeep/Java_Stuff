@@ -16,6 +16,15 @@ class PezDispenser {
 		this.characterName = characterName;
 		return originalCharacterName;
 	};
+	public boolean dispense() {
+		boolean wasDispensed = false;
+		if (!isEmpty()) {
+			pezCount--;
+			wasDispensed = true;
+		}
+		return wasDispensed;
+	}
+
 	public void fill() {
 		pezCount = MAX_PEZ;
 	};
