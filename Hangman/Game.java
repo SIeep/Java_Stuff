@@ -1,4 +1,5 @@
 class Game {
+	public static final int MAX_MISSES = 7;
 	private String answer;
 	private String hits;
 	private String misses;
@@ -8,12 +9,15 @@ class Game {
 		hits = "";
 		misses = "";
 	};
+	public int getRemainingTries() {
+		return MAX_MISSES - misses.length();
+	};
 	public boolean applyGuess(char letter) {
 		boolean isHit = answer.indexOf(letter) != -1;
 		if (isHit) {
 			hits += letter;
 		} else {
-			misses += letter;
+			misses += 1;
 		}
 		return isHit;
 	};
