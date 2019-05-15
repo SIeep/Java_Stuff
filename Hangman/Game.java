@@ -13,8 +13,7 @@ class Game {
 			throw new IllegalArgumentException(letter + " has already been guessed");
 		}
 		return letter;
-	}
-
+	};
 	public Game(String answer) {
 		this.answer = answer.toLowerCase();
 		hits = "";
@@ -22,6 +21,12 @@ class Game {
 	};
 	public int getRemainingTries() {
 		return MAX_MISSES - misses.length();
+	};
+	public boolean applyGuess(String letters) {
+		if (letters.length() == 0) {
+			throw new IllegalArgumentException("No letter found.");
+		}
+		return applyGuess(letters.charAt(0));
 	};
 	public boolean applyGuess(char letter) {
 		letter = normalizeGuess(letter);
@@ -43,5 +48,11 @@ class Game {
 			progress += display;
 		}
 		return progress;
+	};
+	public boolean isWon() {
+		return getCurrentProgress().indexOf('-') == -1;
+	};
+	public String getAnswer() {
+		return answer;
 	}
 }

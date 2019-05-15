@@ -14,9 +14,9 @@ class Prompter {
 		do {
 			System.out.print("Enter a letter:   ");
 			String guessInput = scanner.nextLine();
-			char guess = guessInput.charAt(0);
+			
 			try {
-				isHit = game.applyGuess(guess);
+				isHit = game.applyGuess(guessInput);
 				isAcceptable = true;
 			}	catch(IllegalArgumentException iae) {
 				System.out.printf("%s. Please try again.%n",
@@ -30,5 +30,15 @@ class Prompter {
 		System.out.printf("You have %d guesses left. Try to solve %s%n", 
 			game.getRemainingTries(), 
 			game.getCurrentProgress());
+	}
+
+	public void displayOutcome() {
+		if (game.isWon()) {
+			System.out.printf("You won in %s tries! %n",
+				game.getRemainingTries());
+		} else {
+			System.out.printf("You lost! The winning word was: %s %n",
+				game.getAnswer());
+		}
 	}
 } 
