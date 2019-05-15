@@ -13,11 +13,14 @@ class Game {
 		return MAX_MISSES - misses.length();
 	};
 	public boolean applyGuess(char letter) {
+		if (misses.indexOf(letter) != -1 || hits.indexOf(letter) != -1) {
+			throw new IllegalArgumentException(letter + " has already been guessed");
+		}
 		boolean isHit = answer.indexOf(letter) != -1;
 		if (isHit) {
 			hits += letter;
 		} else {
-			misses += 1;
+			misses += letter;
 		}
 		return isHit;
 	};
