@@ -1,5 +1,5 @@
 public class Cat {
-	private static String name;
+	private final String name;
 
 	public Cat(String name) {
 		this.name = name;
