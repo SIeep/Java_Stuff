@@ -1,8 +1,7 @@
 public class Main {
 
   public static void main(String[] args) {
-    Console console = System.console();
-    
-    
+  	Cow cow = new Cow("Brandon");
+    System.out.printf("Creating a cow named %s...%n", cow.getName());
   }
 }

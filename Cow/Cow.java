@@ -1,5 +1,5 @@
 class Cow {
-	private static final String name;
+	private final String name;
 
 	public Cow(String name) {
 		this.name = name;
