@@ -30,6 +30,15 @@ public class Example {
 		while (dispenser.dispense()) {
 			System.out.println("Chomp!");
 		}
+		try {
+			dispenser.fill(400);
+			System.out.println("This shouldn't happen.");
+		} catch (IllegalArgumentException iae) {
+			System.out.println("Whoa there, partner");
+			System.out.printf("The error was: %s %n", iae.getMessage());
+		}
+		
+		
 	}
 
 }
