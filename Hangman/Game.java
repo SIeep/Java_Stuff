@@ -4,8 +4,19 @@ class Game {
 	private String hits;
 	private String misses;
 
+	private char normalizeGuess(char letter) {
+		if (! Character.isLetter(letter)) {
+			throw new IllegalArgumentException("A letter is required.");
+		}
+		letter = Character.toLowerCase(letter);
+		if (misses.indexOf(letter) != -1 || hits.indexOf(letter) != -1) {
+			throw new IllegalArgumentException(letter + " has already been guessed");
+		}
+		return letter;
+	}
+
 	public Game(String answer) {
-		this.answer = answer;
+		this.answer = answer.toLowerCase();
 		hits = "";
 		misses = "";
 	};
@@ -13,9 +24,7 @@ class Game {
 		return MAX_MISSES - misses.length();
 	};
 	public boolean applyGuess(char letter) {
-		if (misses.indexOf(letter) != -1 || hits.indexOf(letter) != -1) {
-			throw new IllegalArgumentException(letter + " has already been guessed");
-		}
+		letter = normalizeGuess(letter);
 		boolean isHit = answer.indexOf(letter) != -1;
 		if (isHit) {
 			hits += letter;
