@@ -17,7 +17,7 @@ public class Explore {
     	i + 1, 
     	brandonScoreCard[i]);
     };
-    System.out.println("----------------------");
+    System.out.println("/////////////////////");
     int[][] scorecards = {
     	{
     		1, 4, 8, 1, 3, 2, 7, 3, 6, 2, 5, 5, 1
@@ -32,7 +32,15 @@ public class Explore {
     // for (int i = 0; i < scorecards.length; i++) {
     // 	System.out.printf("Testing scorecard %d", scorecards[i]);
     // }
-    System.out.printf("Smith got %d points on hole %d%n", scorecards[2][1], 2);
+    System.out.println("----------------------");
+    System.out.println("----------------------");
+    for (int i = 0; i < friends.length; i++) {
+    	System.out.printf("%s %n ----------------- %n", friends[i]);
+    	for (int j = 0; j < scorecards[i].length; j++) {
+    		System.out.printf("Hole #%d: %d%n", j + 1 , scorecards[i][j]);
+    	}
+    	System.out.println("/------------------------------/");
+    }
   }
   
 }
