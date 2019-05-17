@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a21aea60-d7da-4c45-b7eb-8a4ba5479f24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../IDEChallengeExercise/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IDEChallengeExercise/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IDEChallengeExercise/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IDEChallengeExercise/IDEChallengeExercise.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IDEChallengeExercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IDEChallengeExercise/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IDEChallengeExercise/src/Messy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IDEChallengeExercise/src/Messy.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -195,6 +192,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="38" width="1371" height="791" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
