@@ -8,12 +8,12 @@ public class Messy {
         System.out.println("three");
         System.out.println("four");
         System.out.println("five");
-        System.out.println("six");
-//        Please comment out this line and
-//        this line as well with a hotkey that does multi - line commenting
+        /* Please comment out this line and
+    this line as well with a hotkey that does multi-line commenting */
         List<String> numberWords = Arrays.asList("six", "seven", "eight", "nine");
         for (String numberWord : numberWords) {
             // Use the sout shortcut to write out numberWord;
+            System.out.println(numberWord);
         }
     }
 }
