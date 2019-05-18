@@ -7,20 +7,25 @@ import com.teamtreehouse.model.SongRequest;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
 
 
 public class KaraokeMachine {
     private SongBook mSongBook;
     private BufferedReader mReader;
-    private Queue<SongRequest> mSongQueue;
-
     private Map<String, String> mMenu;
+    private Queue<SongRequest> mSongRequestQueue;
+
 
     public KaraokeMachine(SongBook songBook) {
         mSongBook = songBook;
         mReader = new BufferedReader(new InputStreamReader(System.in));
-        mSongQueue = new ArrayDeque<SongRequest>();
+        mSongRequestQueue = new ArrayDeque<>();
         mMenu = new HashMap<String, String>();
         mMenu.put("add", "Add a new song to the song book");
         mMenu.put("play", "Play next song in the queue");
@@ -29,9 +34,9 @@ public class KaraokeMachine {
     }
 
     private String promptAction() throws IOException {
-        System.out.printf("There are %d songs available and %d in the queue.  Your options are: %n",
+        System.out.printf("There are %d songs available and %d in the queue. Your options are:  %n",
                 mSongBook.getSongCount(),
-                mSongQueue.size());
+                mSongRequestQueue.size());
         for (Map.Entry<String, String> option : mMenu.entrySet()) {
             System.out.printf("%s - %s %n",
                     option.getKey(),
@@ -51,21 +56,21 @@ public class KaraokeMachine {
                     case "add":
                         Song song = promptNewSong();
                         mSongBook.addSong(song);
-                        System.out.printf("%s added!  %n%n", song);
+                        System.out.printf("%s added! %n%n", song);
                         break;
                     case "choose":
                         String singerName = promptForSingerName();
                         String artist = promptArtist();
                         Song artistSong = promptSongForArtist(artist);
                         SongRequest songRequest = new SongRequest(singerName, artistSong);
-                        mSongQueue.add(songRequest);
-                        if (mSongQueue.contains(songRequest)) {
-                            System.out.printf("%n%n Whoops! %s already requested %s",
+                        if (mSongRequestQueue.contains(songRequest)) {
+                            System.out.printf("%n%n Whoops %s already requested %s!",
                                     singerName,
                                     artistSong);
                             break;
                         }
-                        System.out.printf("You chose:  %s %n", artistSong);
+                        mSongRequestQueue.add(songRequest);
+                        System.out.printf("You chose: %s %n", artistSong);
                         break;
                     case "play":
                         playNext();
@@ -74,7 +79,7 @@ public class KaraokeMachine {
                         System.out.println("Thanks for playing!");
                         break;
                     default:
-                        System.out.printf("Unknown choice:  '%s'. Try again.  %n%n%n",
+                        System.out.printf("Unknown choice:  '%s'. Try again. %n%n%n",
                                 choice);
                 }
             } catch (IOException ioe) {
@@ -85,14 +90,14 @@ public class KaraokeMachine {
     }
 
     private String promptForSingerName() throws IOException {
-        System.out.print("Enter the singers name:  ");
+        System.out.print("Enter the singer's name:  ");
         return mReader.readLine();
     }
 
     private Song promptNewSong() throws IOException {
         System.out.print("Enter the artist's name:  ");
         String artist = mReader.readLine();
-        System.out.print("Enter the title:  ");
+        System.out.print("Enter the Title: ");
         String title = mReader.readLine();
         System.out.print("Enter the video URL:  ");
         String videoUrl = mReader.readLine();
@@ -123,27 +128,26 @@ public class KaraokeMachine {
             System.out.printf("%d.)  %s %n", counter, option);
             counter++;
         }
-        System.out.print("Your choice:   ");
+        System.out.print("Your choice:  ");
         String optionAsString = mReader.readLine();
         int choice = Integer.parseInt(optionAsString.trim());
+
         return choice - 1;
     }
 
     public void playNext() {
-        SongRequest songRequest = mSongQueue.poll();
+        SongRequest songRequest = mSongRequestQueue.poll();
         if (songRequest == null) {
-            System.out.println("Sorry there are no songs in the queue." +
-                    "  Use choose from the menu to add some");
+            System.out.println("Sorry there are no songs in the Queue." +
+                    "Use choose from the menu to add some");
         } else {
             Song song = songRequest.getSong();
-            System.out.printf("%n%n%n Are you ready for %s? Open %s to hear %s by %s %n%n%n",
+            System.out.printf("%n%n%n Ready %s? Open %s by %s to hear %s %n%n%n",
                     songRequest.getSingerName(),
                     song.getVideoUrl(),
-                    song.getTitle(),
-                    song.getArtist());
+                    song.getArtist(),
+                    song.getTitle());
         }
     }
 
-
 }
-
