@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="vue-and-java:main" external.linked.project.path="$MODULE_DIR$/../../vue-and-java" external.root.project.path="$MODULE_DIR$/../../vue-and-java" external.system.id="GRADLE" external.system.module.group="com.sIeep.vueandjava" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="ExternalSystem" linkedProjectPath="$MODULE_DIR$/../../../VueAndIntelliJ/vue-and-ide" rootProjectPath="$MODULE_DIR$/../../../VueAndIntelliJ/vue-and-ide" />
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../vue-and-java/out/production/classes" />
     <exclude-output />
