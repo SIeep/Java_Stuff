@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/NewTestApp.iml" filepath="$PROJECT_DIR$/.idea/NewTestApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.sIeep.vueandjava.vue-and-java.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.sIeep.vueandjava.vue-and-java.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.sIeep.vueandjava.vue-and-java.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.sIeep.vueandjava.vue-and-java.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vue-and-java.iml" filepath="$PROJECT_DIR$/.idea/modules/vue-and-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vue-and-java.main.iml" filepath="$PROJECT_DIR$/.idea/modules/vue-and-java.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vue-and-java.test.iml" filepath="$PROJECT_DIR$/.idea/modules/vue-and-java.test.iml" />
     </modules>
   </component>
 </project>

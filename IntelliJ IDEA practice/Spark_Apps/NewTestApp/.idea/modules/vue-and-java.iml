@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="vue-and-java" external.linked.project.path="$MODULE_DIR$/../../vue-and-java" external.root.project.path="$MODULE_DIR$/../../vue-and-java" external.system.id="GRADLE" external.system.module.group="com.sIeep.vueandjava" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="com.sIeep.vueandjava" externalSystemModuleVersion="1.0-SNAPSHOT" linkedProjectId="vue-and-java" linkedProjectPath="$MODULE_DIR$/../../vue-and-java" rootProjectPath="$MODULE_DIR$/../../vue-and-java" />
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../vue-and-java">
+      <excludeFolder url="file://$MODULE_DIR$/../../vue-and-java/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../vue-and-java/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../vue-and-java/out" />
+    </content>
+    <orderEntry type="jdk" jdkName="12" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
