@@ -2,11 +2,13 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
+      For a tutorial and recipes on how to configure / customize this project,<br>
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
     <h3>Installed CLI Plugins</h3>
+    <h3>{{ name }}</h3>
+    <h3>{{ age }}</h3>
     <ul>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
     </ul>
@@ -31,6 +33,12 @@
 
 <script>
 export default {
+  data: function() {
+    return {
+      name: "Brandon",
+      age: "24"
+    };
+  },
   name: 'HelloWorld',
   props: {
     msg: String

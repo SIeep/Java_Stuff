@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="com.sIeep.backend" externalSystemModuleVersion="1.0-SNAPSHOT" linkedProjectId="back-end" linkedProjectPath="$MODULE_DIR$/../../back-end" rootProjectPath="$MODULE_DIR$/../../back-end" />
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../back-end">
+      <excludeFolder url="file://$MODULE_DIR$/../../back-end/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../back-end/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../back-end/out" />
+    </content>
+    <orderEntry type="jdk" jdkName="12" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="ExternalSystem" linkedProjectPath="$MODULE_DIR$/../../back-end" rootProjectPath="$MODULE_DIR$/../../back-end" />
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../back-end/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../back-end/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../back-end/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../back-end/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Gradle: com.sparkjava:spark-core:2.4.3">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../back-end/Could not find com.sparkjava:spark-core:2.4.3.&#10;Searched in the following locations:&#10;  - https:/repo.maven.apache.org/maven2/com/sparkjava/spark-core/2.4.3/spark-core-2.4.3.pom&#10;  - https:/repo.maven.apache.org/maven2/com/sparkjava/spark-core/2.4.3/spark-core-2.4.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
