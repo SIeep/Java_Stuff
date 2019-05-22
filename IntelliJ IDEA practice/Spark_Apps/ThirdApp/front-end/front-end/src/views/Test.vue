@@ -26,7 +26,7 @@
         },
 
         created: function() {
-            axios.get("/hello").then(response => {
+            axios.get("/brandon").then(response => {
                 this.myName = response.data;
             });
         },

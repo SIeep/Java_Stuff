@@ -1,5 +1,5 @@
 public class People {
-    String name = "brandon";
+    String name = "Thug Nasty";
 
     public static void main(String[] args) {
         People person = new People();
