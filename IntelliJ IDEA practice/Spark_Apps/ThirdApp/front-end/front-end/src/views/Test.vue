@@ -3,23 +3,7 @@
         <h1>This is a test page</h1>
         <h1>Text</h1>
         <h1>Message: {{message}}</h1>
-<!--        <h1>Name: {{myName}}</h1>-->
-
-
-            <h1>
-                Select the type of Liquor
-            </h1>
-            <form method="post" action="SelectLiquor">
-                <br>
-                <select name="Type" size="1">
-                    <option>WINE</option>
-                    <option>WHISKY</option>
-                    <option>BEER</option>
-
-                </select>
-                <br><br>
-                <input type="submit">
-            </form>
+        <h1>Name: {{myName}}</h1>
 
     </div>
 </template>
