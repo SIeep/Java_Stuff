@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ThirdApp.iml" filepath="$PROJECT_DIR$/.idea/ThirdApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/thirdapp-back-end.iml" filepath="$PROJECT_DIR$/.idea/modules/thirdapp-back-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thirdapp-back-end.main.iml" filepath="$PROJECT_DIR$/.idea/modules/thirdapp-back-end.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thirdapp-back-end.test.iml" filepath="$PROJECT_DIR$/.idea/modules/thirdapp-back-end.test.iml" />
     </modules>
   </component>
 </project>
