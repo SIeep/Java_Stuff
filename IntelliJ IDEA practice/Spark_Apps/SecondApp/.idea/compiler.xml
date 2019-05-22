@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="back-end.main" target="1.8" />
+      <module name="back-end.test" target="1.8" />
+      <module name="Backendparty" target="1.5" />
+      <module name="SparkTutorial" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
