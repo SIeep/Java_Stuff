@@ -1,6 +1,7 @@
 <template>
     <div class="sign-in">
         <h1>This is the sign-in page</h1>
+        <h3>Your username is: {{ username }}</h3>
     </div>
 </template>
 
@@ -11,7 +12,8 @@
         data: function() {
             return {
                 message: "Welcome to the test page!",
-                myName: ""
+                myName: "",
+                username: ""
             };
         },
 
@@ -20,19 +22,27 @@
                 this.myName = response.data;
             });
         },
-        // methods: {
-        //     // createPost: function() {
-        //     //     var params = {
-        //     //         text: this.createText
-        //     //     };
-        //     //     console.log("creating post...")
-        //     //     axios.post('/api/posts', params).then(
-        //     //         response => {
-        //     //             console.log(response);
-        //     //         });
-        //     //     location.reload();
-        //     },
-        // }
+        methods: {
+            login: function() {
+                var params = {
+                    email: this.email,
+                    password: this.password
+                };
+                axios
+                    .post("/api/sessions", params)
+                    .then(response => {
+                        axios.defaults.headers.common["Authorization"] =
+                            "Bearer " + response.data.jwt;
+                        localStorage.setItem("jwt", response.data.jwt);
+                        this.$router.push("/index");
+                    })
+                    .catch(error => {
+                        this.errors = ["Invalid email or password."];
+                        this.email = "";
+                        this.password = "";
+                    });
+            },
+        }
     }
 </script>
 
