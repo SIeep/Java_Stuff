@@ -5,6 +5,10 @@
         <h1>Message: {{message}}</h1>
         <h1>Name: {{myName}}</h1>
 
+        <form action="/sign-in" method="post">
+            <input type="text" placeholder="What is your username?" name="username">
+            <button>Sign in</button>
+        </form>
     </div>
 </template>
 
