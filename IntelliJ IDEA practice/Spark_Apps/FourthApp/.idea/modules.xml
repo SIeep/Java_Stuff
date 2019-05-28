@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ContactsBack-end.iml" filepath="$PROJECT_DIR$/.idea/modules/ContactsBack-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ContactsBack-end.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ContactsBack-end.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ContactsBack-end.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ContactsBack-end.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/FourthApp.iml" filepath="$PROJECT_DIR$/.idea/FourthApp.iml" />
     </modules>
   </component>
